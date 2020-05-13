@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+09:58:00	207/207	---M--	404	error ('Not%20Found')	text/html	date:Sun,%2008%20Mar%202020%2016:58:01%20GMT	https://101455.8b.io/robots.txt		(from )
+09:58:00	114949/114949	---M--	200	added ('OK')	text/html	etag:%2278cbaca375fbc709bf206e2562456872%22	https://101455.8b.io/	/home/shawnm/websites/poop/101455.8b.io/index.html	(from )

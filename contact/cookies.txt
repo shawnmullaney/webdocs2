@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.123formbuilder.com	TRUE	/ 	FALSE	1999999999	PHPSESSID	1r713a7ldj8hl6c8nkm1p9nq54
+www.123formbuilder.com	TRUE	/	FALSE	1999999999	SameSite	None
+

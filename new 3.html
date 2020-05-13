@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ShawnMullaney.com</title>
+		<meta charset="utf-8" />
+		<!--<meta http-equiv="refresh" content="10" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">ShawnMullaney <span> Digital Handyman</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="samples.html">Work Samples</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="bannertwo">
+				<div class="inner">
+				</div>
+			</section>
+
+		<!-- Main -->
+
+
+<script>
+<?php
+
+$mailTo = "email@exampledomain.co.nz"; // <----- YOUR EMAIL ADDRESS GOES HERE
+
+if ($HTTP_POST_VARS['message']) {
+$mailSubject = "Contact Form";
+$mailHeaders = "From:" . ereg_replace("\r|\n", " ", stripslashes($HTTP_POST_VARS['name'])) . " <" . ereg_replace("\r|\n", " ", stripslashes($HTTP_POST_VARS['email'])) . ">\r\nX-Mailer: PHP/" . phpversion() . "\r\n";
+$mailParams = "-f" . ereg_replace("\r|\n", " ", stripslashes($HTTP_POST_VARS['email']));
+$mailBody = ereg_replace("\r|\n", " ", stripslashes($HTTP_POST_VARS['message']));
+mail($mailTo,$mailSubject,$mailBody,$mailHeaders,$mailParams);
+?>
+
+Thank you for contacting us.<br />
+
+<?php } else { ?>
+
+Contact Form<br /><br />
+
+<form action="<?php echo $HTTP_SERVER_VARS['PHP_SELF']; ?>" method="post">
+<table cellpadding="3" cellspacing="0" border="0">
+<tr>
+    <td class="content" valign="top">
+        Your Name<br />
+    </td>
+    <td>
+        <input class="input" name="name" type="text" size="20" />
+    </td>
+</tr>
+<tr>
+    <td class="content" valign="top">
+        Your Email<br />
+    </td>
+    <td>
+        <input class="input" name="email" type="text" size="20" />
+    </td>
+</tr>
+<tr>
+    <td class="content" valign="top">
+        Your Message<br />
+    </td>
+    <td>
+        <textarea class="input" name="message" cols="30" rows="8"></textarea><br />
+    </td>
+</tr>
+    <tr>
+        <td colspan="2" align="right">
+                <input class="button" type="submit" value="Send Message" />
+        </td>
+    </tr>
+    </table>
+</form>
+
+<?php } ?>
+</script>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+					<p>&copy; ShawnMullaney.com All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+

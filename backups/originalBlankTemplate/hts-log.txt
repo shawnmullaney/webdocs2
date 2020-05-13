@@ -1,0 +1,16 @@
+HTTrack3.49-2 launched on Fri, 06 Mar 2020 15:25:09 at https://shawnmullaney.my-free.website
+(winhttrack https://shawnmullaney.my-free.website -W -O "/home/shawnm/websites/shawn.com" -%v )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:25:36	Error: 	"Not Found" (404) at link https://shawnmullaney.my-free.website/f512d032f7333941da00a88ce66efb9d.svg (from https://shawnmullaney.my-free.website/)
+15:25:36	Error: 	"Not Found" (404) at link https://shawnmullaney.my-free.website/facebook (from https://shawnmullaney.my-free.website/)
+15:25:36	Error: 	"Not Found" (404) at link https://shawnmullaney.my-free.website/twitter (from https://shawnmullaney.my-free.website/)
+15:25:36	Error: 	"Not Found" (404) at link https://shawnmullaney.my-free.website/instagram (from https://shawnmullaney.my-free.website/)
+15:25:36	Warning: 	Link https://shawnmullaney.my-free.website/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+
+HTTrack Website Copier/3.49-2 mirror complete in 26 seconds : 26 links scanned, 21 files written (1678712 bytes overall) [1073895 bytes received at 41303 bytes/sec], 793611 bytes transferred using HTTP compression in 15 files, ratio 21%, 8.6 requests per connection
+(4 errors, 1 warnings, 0 messages)
